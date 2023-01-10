@@ -8,6 +8,130 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/css.css" rel="stylesheet">
 <body>
+    <style>
+        /* Loadin Page */
+
+:root {
+    --effect: hover 1s linear infinite;
+  }
+  
+  #loading {
+    display: flex;
+    text-align: center;
+    z-index: 100;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: #000;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    left: 0%;
+  }
+
+  #papa {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 4em;
+    font-family: arial;
+    font-weight: 600;
+    transform: scale(.5);
+    color: #121212;
+    -webkit-text-stroke: 2px gray;
+  }
+  
+  #papa:nth-child(1) {
+    animation: var(--effect);
+  }
+  
+  #papa:nth-child(2) {
+    animation: var(--effect) .125s;
+  }
+  
+  #papa:nth-child(3) {
+    animation: var(--effect) .25s;
+  }
+  
+  #papa:nth-child(4) {
+    animation: var(--effect) .375s;
+  }
+  
+  #papa:nth-child(5) {
+    animation: var(--effect) .5s;
+  }
+  
+  #papa:nth-child(6) {
+    animation: var(--effect) .675s;
+  }
+  
+  #papa:nth-child(7) {
+    animation: var(--effect) .75s;
+  }
+  
+  @keyframes hover {
+    0% {
+      transform: scale(.5);
+      color: #121212;
+      -webkit-text-stroke: 2px gray;
+    }
+  
+    20% {
+      transform: scale(1);
+      color: pink;
+      -webkit-text-stroke: 3px red;
+      filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 3px red)drop-shadow(0 0 5px red)hue-rotate(10turn);
+    }
+  
+    50% {
+      transform: scale(.5);
+      color: #121212;
+      -webkit-text-stroke: 2px gray;
+    }
+  
+  
+  }
+  
+
+
+
+  /* Profile Card */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover, a:hover {
+    opacity: 0.7;
+  }
+    </style>
     <!-- loading Page -->
     <div id="loading">
         <p id="papa">l</p>
