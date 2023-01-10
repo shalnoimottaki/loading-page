@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css.css" rel="stylesheet">
+</head>
+<body>
+    <!-- loading Page -->
+    <div id="loading">
+        <p id="papa">l</p>
+        <p id="papa">o</p>
+        <p id="papa">a</p>
+        <p id="papa">d</p>
+        <p id="papa">i</p>
+        <p id="papa">n</p>
+        <p id="papa">g</p>
+    </div>
+
+       <!-- Profile Card -->
+    <h2 style="text-align:center">User Profile Card</h2>
+
+    <div class="card">
+        <img src="logo.png" alt="John" style="width:100%">
+        <h1>Shalnoi Mottaki</h1>
+        <p class="title">Full Stack Developer | Freelancer</p>
+        <p>mottaki.rf.gd</p>
+        <div style="margin: 24px 0;">
+            <a href="https://instagram.com/shalnoi_mottaki"> <i class="fa fa-instagram"></i></a> 
+            <a href="https://www.linkedin.com/in/aboubakrmoutaqi"> <i class="fa fa-linkedin"></i></a>  
+            <a href="https://www.linkedin.com/in/aboubakrmoutaqi"> <i class="fa fa-github"></i></a> 
+            <a href="https://facebook.com/shalnoi.mottaki"> <i class="fa fa-facebook"></i></a>  
+        </div>
+        <p><button>Contact</button></p>
+    </div>
+    <!-- jQuery important -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Script -->
+    <script>
+        $(window).on('load',function(){
+        $("#loading").fadeOut(1000);
+        // $("#loader").fadeIn();
+         })
+    </script>
+</body>
+</html>
